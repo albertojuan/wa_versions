@@ -1,1 +1,1 @@
-tb push --no-versions pipes/temp.pipe --populate
+tb pipe rm temp
