@@ -1,1 +1,1 @@
-tb pipe rm temp
+tb pipe rm --yes temp
