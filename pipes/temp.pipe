@@ -3,7 +3,7 @@ SQL >
       SELECT
          *,
          'production' as environment
-      FROM analytics_events
+      FROM analytics_events__v0
 
 TYPE materialized
 DATASOURCE analytics_events__v1
