@@ -1,9 +1,0 @@
-NODE temp_0
-SQL >
-      SELECT
-         *,
-         'production' as environment
-      FROM analytics_events
-
-TYPE materialized
-DATASOURCE analytics_events__v1
