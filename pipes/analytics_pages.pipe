@@ -20,9 +20,4 @@ SQL >
         location,
         pathname
 
-TYPE materialized
-DATASOURCE analytics_pages_mv
-ENGINE "AggregatingMergeTree"
-ENGINE_PARTITION_KEY "toYYYYMM(date)"
-ENGINE_SORTING_KEY "date, device, browser, location, pathname"
 
