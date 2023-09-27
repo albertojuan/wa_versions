@@ -1,3 +1,4 @@
+VERSION 1
 TOKEN "tracker" APPEND
 
 DESCRIPTION >
@@ -8,6 +9,7 @@ SCHEMA >
     `session_id` String `json:$.session_id`,
     `action` LowCardinality(String) `json:$.action`,
     `version` LowCardinality(String) `json:$.version`,
+    `environment` LowCardinality(String) `json:$.environment`,
     `payload` String `json:$.payload`
 
 ENGINE "MergeTree"
