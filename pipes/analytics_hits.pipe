@@ -1,3 +1,4 @@
+VERSION 1
 DESCRIPTION >
 	Parsed `page_hit` events, implementing `browser` and `device` detection logic.
 
