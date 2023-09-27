@@ -18,4 +18,8 @@ SQL >
         date,
         session_id
 
-
+TYPE materialized
+DATASOURCE analytics_sessions_mv
+ENGINE "AggregatingMergeTree"
+ENGINE_PARTITION_KEY "toYYYYMM(date)"
+ENGINE_SORTING_KEY "date, session_id"
