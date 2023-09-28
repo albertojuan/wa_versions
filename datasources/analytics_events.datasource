@@ -10,7 +10,8 @@ SCHEMA >
     `action` LowCardinality(String) `json:$.action`,
     `version` LowCardinality(String) `json:$.version`,
     `environment` LowCardinality(String) `json:$.environment`,
-    `payload` String `json:$.payload`
+    `payload` String `json:$.payload`,
+    `new_colum` String `json:$.environment`
 
 ENGINE "MergeTree"
 ENGINE_PARTITION_KEY "toYYYYMM(timestamp)"
